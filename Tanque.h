@@ -9,21 +9,29 @@
 #define Tanque_h
 
 class Tanque{
-  public:
-    Tanque(int m1p, int m1n, int m2p, int m2n); //definimos constructor para motores M = motor 1 = Motor 1 P o N = positivo o negativo
-    void motorConfig(int m1p, int m1n, int m2p, int m2n);
-    void adelante();
-    void atras();
-    void der();
-    void izq();
-    void detener();
-   private:
-    //Motor 1
-    int _m1p;
-    int _m1n;
-    //Motor 2
-    int _m2p;
-    int _m2n;
+private:  //atributos del tanque
+
+	// Motor 1
+	int P1N; //polo Norte (motor 1)
+	int P1S; //polo Sur (motor 1)
+
+	// Motor 2
+
+	int P2N; //polo norte (motor 2)
+	int P2S; //polo Sur (motor 2)
+
+public:
+
+	Tanque(int _P1N, int _P1S, int _P2N, int _P2S); //todos los atributos del constructor son de tipo INT
+
+	
+	void info();
+	void avanza();
+	void retrocede();
+	void derecha();
+	void izquierda();
+	void detener();
+
 }; //no olvidar ;
 
 #endif
