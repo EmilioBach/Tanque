@@ -15,13 +15,13 @@ Tanque::Tanque(int _P1N, int _P1S, int _P2N, int _P2S) {
 }
 
 void Tanque::info() {
-	serial.begin(9600);
+	Serial.begin(9600);
 	//motor 1
-	pinMode(_P1N, OUTPUT);
-	pinMode(_P1S, OUTPUT);
+	pinMode(P1N, OUTPUT);
+	pinMode(P1S, OUTPUT);
 	//motor 2
-	pinMode(_P2N, OUTPUT);
-	pinMode(_P2S, OUTPUT);
+	pinMode(P2N, OUTPUT);
+	pinMode(P2S, OUTPUT);
 
 	Serial.println("--------------------------------------------------------------------------------------------------");
 	Serial.println("Los pines a utilizar son: ");
@@ -31,36 +31,36 @@ void Tanque::info() {
 }
 
 void Tanque::avanza() {
-	digitalWrite(_P1N, LOW);
-	digitalWrite(_P1S, HIGH);
-	digitalWrite(_P2N, LOW);
-	digitalWrite(_P2S, HIGH);
+	digitalWrite(P1N, LOW);
+	digitalWrite(P1S, HIGH);
+	digitalWrite(P2N, LOW);
+	digitalWrite(P2S, HIGH);
 }
 
 void Tanque::retrocede() {
-	digitalWrite(_P1N, HIGH);
-	digitalWrite(_P1S, LOW);
-	digitalWrite(_P2N, HIGH);
-	digitalWrite(_P2S, LOW);
+	digitalWrite(P1N, HIGH);
+	digitalWrite(P1S, LOW);
+	digitalWrite(P2N, HIGH);
+	digitalWrite(P2S, LOW);
 }
 
 void Tanque::derecha() {
-	digitalWrite(_P1N, LOW);
-	digitalWrite(_P1S, HIGH);
-	digitalWrite(_P2N, HIGH);
-	digitalWrite(_P2S, LOW);
+	digitalWrite(P1N, LOW);
+	digitalWrite(P1S, HIGH);
+	digitalWrite(P2N, HIGH);
+	digitalWrite(P2S, LOW);
 }
 
 void Tanque::izquierda() {
-	digitalWrite(_P1N, HIGH);
-	digitalWrite(_P1S, LOW);
-	digitalWrite(_P2N, LOW);
-	digitalWrite(_P2S, HIGH;
+	digitalWrite(P1N, HIGH);
+	digitalWrite(P1S, LOW);
+	digitalWrite(P2N, LOW);
+	digitalWrite(P2S, HIGH);
 }
 
 void Tanque::detener() {
-	digitalWrite(_P1N, LOW);
-	digitalWrite(_P1S, LOW);
-	digitalWrite(_P2N, LOW);
-	digitalWrite(_P2S, LOW);
+	digitalWrite(P1N, LOW);
+	digitalWrite(P1S, LOW);
+	digitalWrite(P2N, LOW);
+	digitalWrite(P2S, LOW);
 }
