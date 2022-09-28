@@ -5,16 +5,6 @@ hecho por Emilio y Manuel
 #include "Tanque.h"
 #include "Arduino.h"
 
-/*Tanque::Tanque(int _P1N, int _P1S, int _P2N, int _P2S) {
-	//motor 1
-	P1N = _P1N;
-	P1S = _P1S;
-	//motor 2
-	P2N = _P2N;
-	P2S = _P2S;
-}
-*/
-
 void Tanque::info(int _P1N, int _P1S, int _P2N, int _P2S) {
 	Serial.begin(9600);
 
