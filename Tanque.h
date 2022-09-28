@@ -22,9 +22,6 @@ private:  //atributos del tanque
 
 public:
 
-	//Tanque(int _P1N, int _P1S, int _P2N, int _P2S); //todos los atributos del constructor son de tipo INT
-
-	
 	void info(int _P1N, int _P1S, int _P2N, int _P2S);
 	void avanza();
 	void retrocede();
