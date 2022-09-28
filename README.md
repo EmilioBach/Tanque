@@ -1,0 +1,3 @@
+# Tanque
+
+Solo es una pequeña libreria que sirve para controlar un tanquecito, con sus metodos muy sensillos...
