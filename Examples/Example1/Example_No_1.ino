@@ -14,7 +14,7 @@ void loop() {
   delay(1000);
   tank.derecha(); //el tanque gira a la derecha
   delay(1000);
-  tank.retrocede(); //el tanque avanza
+  tank.retrocede(); //el tanque retrocede
   delay(2000);
   tank.detener(); //el tanque se detiene
   delay(3000);
