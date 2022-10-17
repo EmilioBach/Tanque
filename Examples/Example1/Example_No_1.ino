@@ -3,7 +3,9 @@
 Tanque tank; //instancia a la clase
 
 void setup() {
-  tank.info(10,11,12,13); //indicar pines
+  tank.chazis(10,11,12,13);
+  tank.torreta(9,8,7,6,5,4);
+  //indicar pines
 
 }
 
@@ -19,4 +21,4 @@ void loop() {
   tank.detener(); //el tanque se detiene
   delay(3000);
 
-}
+}.
