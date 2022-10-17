@@ -3,22 +3,22 @@
 Tanque tank; //instancia a la clase
 
 void setup() {
-  tank.chazis(10,11,12,13);
-  tank.torreta(9,8,7,6,5,4);
+  tank.chazis(10,11,12,13,9,8,7,6,5,4);
   //indicar pines
 
 }
 
 void loop() {
-  tank.avanza(); //el tanque avanza
-  delay(2000);
-  tank.izquierda(); //el tanque gira a la izquierda
-  delay(1000);
-  tank.derecha(); //el tanque gira a la derecha
-  delay(1000);
-  tank.retrocede(); //el tanque retrocede
-  delay(2000);
-  tank.detener(); //el tanque se detiene
-  delay(3000);
+  /*
+	avanza
+	retrocede
+	derecha
+	izquierda
+	detener
+	disparar_l
+	disparar_e
+	mover_t
+	mover_t_i*/
 
-}.
+  
+}
