@@ -45,6 +45,7 @@ public:
 	void disparar_e();
 	void mover_t();
 	void mover_t_i();
+	void detener_t();
 
 }; //no olvidar ;
 
